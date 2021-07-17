@@ -1,0 +1,202 @@
+/*color rgba(30,30,30,255) */
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows:
+    50px
+    1fr
+    80px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: whitesmoke;
+}
+
+.header .logo {
+  padding-left: 30px;
+}
+
+.header .logo a {
+  color: #048acd;
+  font-family: 'Zen Loop', cursive;
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.main {
+  padding: 0;
+  height: 680px;
+  background-image: url("../assets/img/background.jpg");
+  background-size: 100%;
+}
+
+.main-text-card {
+  width: 300px;
+  background-color: #ffffff20;
+  border-radius: 5%;
+  text-align: center;
+  color: white;
+}
+
+.main-text-card .--title {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.main-text-card .--text {
+  margin: 0;
+  padding: 10px;
+}
+
+.text-1 {
+  position: absolute;
+  top: 150px;
+  right: 50px;
+}
+
+.text-2 {
+  position: absolute;
+  bottom: 400px;
+  left: 20px
+}
+
+.benefits {
+  background-color: #fc44a6;
+  height: 300px;
+}
+
+.benefits-wrapper {
+  padding-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+}
+
+.benefit-card {
+  max-width: 30%;
+  margin: 0 10px;
+}
+
+.benefit-card .--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-card .--title {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.benefit-card .--title h3 {
+  margin: 0;
+}
+
+.benefit-card .--text p {
+  margin: 0;
+}
+
+.benefit-card .--text {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.benefits img {
+  height: 80px;
+  width: 80px;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(78, 43, 136);
+  padding: 50px 0;
+}
+
+.register .email-card {
+  background-color: white;
+  width: 350px;
+  border-radius: 5px;
+  text-align: center;
+  color: #4e2b88;
+  box-shadow:
+  0 2px 23px 0 rgb(49, 23, 92, 0.8),
+  0 2px 49px 0 rgb(49, 23, 92, 0.8);
+
+}
+
+
+.email-card .--title {
+  font-size: 1.3em;
+}
+
+.email-card .--form label{
+  display: block;
+  font-size: 1.2em;
+}
+
+.email-card .--form input {
+  height: 30px;
+  width: 80%;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  background-color: #4e2b883f;
+  font-size: 1.1em;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.email-card .--form input:focus {
+  border: solid 1px #4e2b88;
+}
+
+.email-card .--submit-button button {
+  margin: 30px 0;
+  height: 40px;
+  width: 120px;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 4px;
+  transition: ease-in-out 0.2s;
+  background-color: #4e2b8822;
+  color: #4e2b88;
+}
+
+.email-card .--submit-button button:hover {
+  background-color: #4e2b88;
+  color: white;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ebee6d;
+}
+
+.footer .content p {
+  color: #4e2b88;
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.footer .content .heart {
+  color: red;
+}
+
+.footer .content a {
+  text-decoration: none;
+  font-weight: bold;
+}
