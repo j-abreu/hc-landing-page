@@ -1,6 +1,4 @@
-console.log('ola');
 const form = document.getElementById("register-form");
-console.log(form);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -33,5 +31,4 @@ form.addEventListener('submit', (e) => {
     submitButton.classList.remove("sent");
     submitButton.innerHTML = "Cadastrar";
   }, 3000);
-  console.log(submitButton)
 })
