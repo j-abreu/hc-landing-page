@@ -17,7 +17,16 @@ body {
 }
 
 .header .logo {
-  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.header .logo img {
+  padding-right: 10px;
+  height: 40px;
+  width: 40px;
 }
 
 .header .logo a {
@@ -36,7 +45,7 @@ body {
 }
 
 .main-text-card {
-  width: 300px;
+  width: 350px;
   background-color: #ffffff20;
   border-radius: 5%;
   text-align: center;
@@ -46,11 +55,17 @@ body {
 .main-text-card .--title {
   margin: 0;
   padding-top: 10px;
+  font-family: 'Zen Loop', cursive;
+  font-weight: bold;
+  font-size: 1.8em;
+  letter-spacing: 1px;
 }
 
 .main-text-card .--text {
   margin: 0;
   padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.3em;
 }
 
 .text-1 {
@@ -66,6 +81,7 @@ body {
 }
 
 .benefits {
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: #fc44a6;
   height: 300px;
 }
@@ -92,7 +108,7 @@ body {
 .benefit-card .--title {
   padding-top: 10px;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .benefit-card .--title h3 {
@@ -106,7 +122,7 @@ body {
 .benefit-card .--text {
   padding-top: 10px;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .benefits img {
@@ -134,14 +150,20 @@ body {
 
 }
 
+.email-card {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 .email-card .--title {
   font-size: 1.3em;
+  font-weight: bold;
+  margin: 15px 0 20px 0;
+  padding: 0 10px;
 }
 
 .email-card .--form label{
   display: block;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .email-card .--form input {
@@ -165,7 +187,9 @@ body {
   height: 40px;
   width: 120px;
   border: none;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.2em;
+  font-weight: bold;
   border-radius: 4px;
   transition: ease-in-out 0.2s;
   background-color: #4e2b8822;
@@ -199,4 +223,9 @@ body {
 .footer .content a {
   text-decoration: none;
   font-weight: bold;
+  transition: ease-in-out 0.2s;
+}
+
+.footer .content:hover a {
+  color: red;
 }
