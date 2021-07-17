@@ -38,10 +38,12 @@ body {
 }
 
 .main {
+  position: relative;
   padding: 0;
   height: 680px;
   background-image: url("../assets/img/background.jpg");
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-text-card {
@@ -54,40 +56,40 @@ body {
 
 .main-text-card .--title {
   margin: 0;
-  padding-top: 10px;
+  padding: 10px 0;
   font-family: 'Zen Loop', cursive;
   font-weight: bold;
-  font-size: 1.8em;
+  font-size: 2em;
   letter-spacing: 1px;
 }
 
 .main-text-card .--text {
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .text-1 {
   position: absolute;
-  top: 150px;
+  top: 50px;
   right: 50px;
 }
 
+
 .text-2 {
   position: absolute;
-  bottom: 400px;
+  bottom: 200px;
   left: 20px
 }
 
 .benefits {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #fc44a6;
-  height: 300px;
 }
 
 .benefits-wrapper {
-  padding-top: 30px;
+  padding: 30px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -211,7 +213,7 @@ body {
 }
 
 .footer .content p {
-  color: #4e2b88;
+  color: #acacac;
   margin: 5px 0;
   font-size: 1.1em;
 }
@@ -228,4 +230,72 @@ body {
 
 .footer .content:hover a {
   color: red;
+}
+
+
+@media(max-width: 930px) {
+
+  body {
+    grid-template-rows: 
+      80px
+      1fr
+      80px;
+  }
+
+  
+  .header {
+    font-size: 0.7em;
+  }
+  
+  .header .logo{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header .logo img {
+    padding: 0;
+  }
+  
+  .main {
+    display: block;
+    background-position-x: -200px;
+  }
+
+  .main-text-card {
+    background-color: #018ccf90;
+  }
+
+  .text-1 {
+    position: absolute;
+    top: 50px;
+    right: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-2 {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .benefits .benefits-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .benefit-card {
+    max-width: 80%;
+    padding: 30px;
+  }
+
 }
