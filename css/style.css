@@ -140,7 +140,7 @@ body {
   padding: 50px 0;
 }
 
-.register .email-card {
+.register .email-form {
   background-color: white;
   width: 350px;
   border-radius: 5px;
@@ -152,39 +152,49 @@ body {
 
 }
 
-.email-card {
+.email-form {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.email-card .--title {
+.email-form .--title {
   font-size: 1.3em;
   font-weight: bold;
   margin: 15px 0 20px 0;
   padding: 0 10px;
 }
 
-.email-card .--form label{
+.email-form .--form label{
+  padding-top: 15px;
   display: block;
   font-size: 1.3em;
 }
 
-.email-card .--form input {
+.email-form .--form input {
   height: 30px;
   width: 80%;
   border: none;
   outline: none;
-  margin: 10px 0;
+  margin: 10px 0 5px 0;
   background-color: #4e2b883f;
   font-size: 1.1em;
   text-align: center;
   box-sizing: border-box;
 }
 
-.email-card .--form input:focus {
+.email-form .--form .--error-message {
+  display: block;
+  color: white;
+}
+
+.email-form .--form .--error-message.active {
+  color: red;
+}
+
+.email-form .--form input:focus {
   border: solid 1px #4e2b88;
 }
 
-.email-card .--submit-button button {
+.email-form .--submit-button button {
   margin: 30px 0;
   height: 40px;
   width: 120px;
@@ -198,7 +208,13 @@ body {
   color: #4e2b88;
 }
 
-.email-card .--submit-button button:hover {
+.email-form .--submit-button button.sent {
+  background-color: #4e2b88;
+  color: white;
+  cursor: pointer;
+}
+
+.email-form .--submit-button button:hover {
   background-color: #4e2b88;
   color: white;
   cursor: pointer;
@@ -213,7 +229,7 @@ body {
 }
 
 .footer .content p {
-  color: #acacac;
+  color: #4e2b88;
   margin: 5px 0;
   font-size: 1.1em;
 }

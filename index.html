@@ -86,16 +86,18 @@
       </div>
     </section>
     <section class="register">
-      <div class="email-card">
+      <div class="email-form">
         <p class="--title">Gostou?<br>Você gostaria de ser avisado das nossas promoções?</p>
-        <form class="--form" action="#" id="email-form">
+        <form id="register-form" class="--form" action="#">
           <label for="name">Seu nome</label>
           <input id="name" name="name" type="text">
+          <span id="name-error-message" class="--error-message">Nome inválido</span>
           <label for="email">Seu Email</label>
           <input id="email" name="email" type="text">
+          <span id="email-error-message" class="--error-message">Email inválido</span>
         </form>
         <div class="--submit-button">
-          <button type="submit" form="email-form">Cadastrar</button>
+          <button id="submit-button" type="submit" form="register-form">Cadastrar</button>
         </div>
       </div>
     </section>
@@ -107,4 +109,5 @@
     </div>
   </footer>
 </body>
+<script src="js/script.js"></script>
 </html>
